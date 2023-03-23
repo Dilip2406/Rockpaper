@@ -5,10 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./rockpaper.js"></script>
+    <style>
+        *{
+            font-family: fantasy,monospace;
+            color:#fff;
+            font-size: 26px;
+            background-color: #080008;
+        }
+        
+        button{
+            align-self: center;
+            padding:10px;
+            border-radius:50%;
+            background-size:cover;
+            border: 2px solid #FFF;
+
+            
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 20%;
+            padding-top:5%;
+            padding-bottom:2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+        }
+        .Rock,.Paper,.Scissors{
+            flex-grow:1;
+            height:220px;
+            flex-shrink: 1;
+            margin: 2%;
+
+
+        }
+        .Rock{
+            background-image:url("./rock.jpg");
+            background-repeat:no-repeat;
+            margin-left: 23%;
+            background-position: center;
+            background-size: contain;
+        }
+        .Paper{
+            background-image:url("./paper.jpg");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .Scissors{
+            background-image:url("./scissors.jpg");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 23%;
+        }
+        .output{
+            color:yellow;
+            font-size:28px;
+            text-align: center;
+        }
+        .game{
+            color:yellow;
+            font-size:28px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .score{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width:700px;
+
+
+        }
+        .compscore{
+            align-self: center;
+            padding:20px;
+            
+        }
+        .playerscore{
+            align-self: center;
+            padding:20px;
+        }
+        h2{
+            text-align: center;
+            font-weight: 500;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
-    
+    <h2>Rock Paper Scissors</h2>
+    <p>First to 5 round wins</p>
+    <div class="container">
+    <button class="Rock" id="1" ></button>
+    <button class="Paper" id="2" ></button>
+    <button class="Scissors" id="3"> </button>
+    </div>
+    <div class="score">
+        <span class="compscore"></span> <span class="playerscore"></span>
+    </div>
+    <div class="output"></div>
+    <div class="game"></div>
+    <script src="./rockpaper.js"></script>
 </body>
 </html>
