@@ -1,8 +1,8 @@
 let playerscore=0;
 let compscore=0;
 
-const button=document.querySelectorAll('button');
-button.forEach(button => button.addEventListener('click',respond))
+const img=document.querySelectorAll('img');
+img.forEach(img => img.addEventListener('click',respond))
 
 function respond(e)
 {
@@ -23,7 +23,7 @@ function respond(e)
         div.innerHTML=`Player Wins!!<br><br> Refresh the page to play again.`;
         playerscore=0;
         compscore=0;
-        button.forEach(button => button.removeEventListener('click',respond));
+        img.forEach(img => img.removeEventListener('click',respond));
 
     }
     else if (compscore===5)
@@ -31,7 +31,7 @@ function respond(e)
         div.innerHTML=`Computer Wins!!<br><br> Refresh the page to play again.`;
         playerscore=0;
         compscore=0;
-        button.forEach(button => button.removeEventListener('click',respond));
+        img.forEach(img => img.removeEventListener('click',respond));
 
     }
    console.log(playerscore);

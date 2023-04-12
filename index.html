@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            font-family: fantasy,monospace;
+        *{  
+            font-family: 'Times New Roman', Times, serif;
+            
             color:#fff;
-            font-size: 26px;
+            font-size: 30px;
             background-color: #080008;
         }
         
@@ -91,10 +92,22 @@
         }
         h2{
             text-align: center;
-            font-weight: 500;
+            font-weight: 800;
+            font-size: 30px;
         }
         p{
             text-align: center;
+           font-weight: 600;
+           
+        }
+        img{
+            background-color: white;
+            border-radius: 50%;
+        }
+        img:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 1rem yellow;
+            border-color: yellow;
         }
     </style>
 </head>
@@ -102,9 +115,9 @@
     <h2>Rock Paper Scissors</h2>
     <p>First to 5 round wins</p>
     <div class="container">
-    <button class="Rock" id="1" ></button>
-    <button class="Paper" id="2" ></button>
-    <button class="Scissors" id="3"> </button>
+    <img class="Rock" id="1" src="./Rock.jpeg" />
+    <img class="Paper" id="2" src="./paper.jpg"/>
+    <img class="Scissors" id="3" src="./scissors.jpg"/> 
     </div>
     <div class="score">
         <span class="compscore"></span> <span class="playerscore"></span>
